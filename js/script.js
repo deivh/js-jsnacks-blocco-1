@@ -8,6 +8,13 @@ function student() {
     console.log(student);
     return student;
 }
+
+function printClassroom(){
+    for (var i=0; i<students.length; i++){
+        console.log(students[i]['name'], students[i]['lastname']);
+    }
+}
+
 function arrAddStudent(){
     var classroom = parseInt(prompt("Quanti studenti vuoi inserire in classe?"));
     for (var i=0; i<classroom; i++)  {
@@ -42,7 +49,7 @@ function init() {
         }
     ]
     $('#startBtn1').click(student);
-    // $('#startBtn2').click(arrStudent);
+    $('#startBtn2').click(printClassroom);
     $('#startBtn3').click(arrAddStudent);
 
 }
