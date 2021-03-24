@@ -6,11 +6,45 @@ function student() {
     }
 
     console.log(student);
+    return student;
+}
+function arrAddStudent(){
+    var classroom = parseInt(prompt("Quanti studenti vuoi inserire in classe?"));
+    for (var i=0; i<classroom; i++)  {
+        var stud = student()
+        students.push(stud)
+    }
+
+    console.log(students);
 }
 
-
 function init() {
-    $('#startBtn').click(student);
+    students = [
+        {
+            'name': 'Pasqualino',
+            'lastname': 'Vanità',
+            'età': 45
+        },
+        {
+            'name': 'Gennaro',
+            'lastname': 'Bullo',
+            'età': 45
+        },
+        {
+            'name': 'Ezio',
+            'lastname': 'Greggio',
+            'età': 45
+        },
+        {
+            'name': 'Gengis',
+            'lastname': 'Khan',
+            'età': 45
+        }
+    ]
+    $('#startBtn1').click(student);
+    // $('#startBtn2').click(arrStudent);
+    $('#startBtn3').click(arrAddStudent);
+
 }
 
 $(document).ready(init);
