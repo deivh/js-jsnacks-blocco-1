@@ -19,19 +19,15 @@ p {
     font-size: 25px;
     font-weight: bold;
 }
-
-#pair {
-    color: green;
+div.box {
     display: flex;
-    align-self: center;
-    font-size: 25px;
-    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    
 }
-
-#odd {
-    color:red;
-    display: flex;
+#startBtn {
     align-self: center;
-    font-size: 25px;
-    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;
 }
